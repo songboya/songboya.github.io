@@ -350,15 +350,17 @@ form input {
 
 /* 显示器 */
 
-#fruit,#key {	
+#key {	
 	background:lightpink;
 }
 .fruit_top {
-	height: 30px;
 	height:480px;
 	width:1060px;
 	margin: 20px auto 20px;
-
+}
+.fruit_topl{
+	height: 30px;
+	border-bottom: 2px solid #ff7247;
 }
 .fruit_bottom {
 	display: flex;
@@ -368,7 +370,7 @@ form input {
 	height:422px;
 	padding-top: 26px;
 	padding-left: 30px; 
-	background: #ffb29a url(../img/xianshipi2.png) no-repeat 5px 70px ;
+	background: #ffb29a url(../img/xianshipi2.png) no-repeat 5px 150px ;
 	background-size:90% ;
 	position: relative;
 }
@@ -447,12 +449,14 @@ form input {
 .rword{
 	width:178px;
 	height:223px;
-	padding-left:21px;
+	padding-left:10px;
+	padding-right:11px;
 	border-right:1px solid #d6d6d6;
 }
 .rword_image img {
 	height:137.9px;
 	width: 178px;
+	margin-top:5px;
 }
 .rword_image{
 	height:137.9px;
@@ -491,7 +495,8 @@ form input {
 .last{
 	width:178px;
 	height: 223px;
-	padding-left:21px;
+	padding-left:10px;
+	padding-right:11px;
 	border-top:1px solid #d6d6d6;
 	border-bottom: 1px solid #d6d6d6;
 	border-left:1px solid #d6d6d6;
@@ -501,7 +506,7 @@ form input {
 	height: 137.9px;
 }
 .minus {
-	padding-left:20px;
+	padding: 0 10px;
 }
 .addright {
 	border-right:1px solid #d6d6d6;
