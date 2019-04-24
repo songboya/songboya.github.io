@@ -1,0 +1,14 @@
+.reg_protocol_content_red a:hover {
+	text-decoration: underline;
+}
+
+.reg_protocol_content button:hover,
+#regNext1:hover,
+.reg_information ul li button:hover{
+	background: #3385d9;
+}
+
+
+
+
+	

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>科创注册</title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" type="text/css">
+		<link rel="icon" href="img/logo.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register_hover.css">
+	</head>
+	<body>
+		<div class="reg">
+			<!-- 注册进度 -->
+			<div class="reg_steps">
+				<ul class="reg_stepsli">
+					<li class="reg_active">
+						<i>1</i>
+						<span>设置用户名</span>
+					</li>
+					<li>
+						<i>2</i>
+						<span>填写账号信息</span>
+					</li>
+					<li>
+						<i>√</i>
+						<span>注册成功</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 注册协议 -->
+			<div class="reg_protocol">
+				<div class="reg_protocol_tittle">
+					<h3>注册协议</h3>
+					<a href="index.html"><i class="fa fa-close  fa-2x"></i></a>	
+				</div>
+				<div class="reg_protocol_content">
+					<p>
+						<strong>【审慎阅读】</strong>您在申请注册流程中点击同意前，应当认真阅读以下协议。<strong class="underline">请您务必审慎阅读、充分理解协议中相关条款内容，其中包括：</strong>
+					</p>
+					<p>
+						1、<strong class="underline">与您约定免除或限制责任的条款；</strong>
+					</p>
+					<p>
+						2、<strong class="underline">与您约定法律适用和管辖的条款；</strong>
+					</p>
+					<p>
+						3、<strong class="underline">其他以粗体下划线标识的重要条款。</strong>
+					</p>
+					<p>
+						如您对协议有任何疑问，可向平台客服咨询。
+					</p>
+					<p>
+						<strong>【特别提示】</strong>当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与科创发生争议的，适用《科创平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。
+					</p>
+					<p>
+						<strong class="underline">阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</strong>
+					</p>
+					<p class="reg_protocol_content_red">
+						<a href="###">科创平台服务协议</a>
+					</p>
+					<p class="reg_protocol_content_red">
+						<a href="###">隐私权政策</a>
+					</p>
+					<p class="reg_protocol_content_red">
+						<a href="###">法律声明</a>
+					</p>
+					<p style="text-align: center;">
+						<button id="agreeProtocol">同意协议</button>
+					</p>
+				</div>
+
+			</div>
+			<!-- 注册手机号 -->
+			<div class="reg_form">
+				<div class="reg_form_phone">
+					<p>
+						<span>手机号:</span>
+						<input type="text" name="" id="reg_phoneNumber" value="" placeholder="请输入您的手机号"/>
+						<span class="reg_tips">*手机码错误</span>
+					</p>
+					<p>
+						<span>验证码:</span>
+						<input type="text" name="" id="reg_ver" value="" placeholder="输入右侧数字"/>
+						<strong id="verCode"></strong>
+						<span class="reg_tips">*验证码输入错误</span>
+					</p>
+				</div>
+				<button id="regNext1" type="button">下一步</button>
+				
+			</div>
+			<!-- 注册信息 -->
+			<div class="reg_information">
+				<ul>
+					<li>
+						<span>用户名</span>
+						<input type="text" name="" id="" value="" placeholder="请输入6-12位用户名"/>*
+						<strong>请输入正确用户名</strong>
+					</li>
+					<li>
+						<span>密码</span>
+						<input type="password" name="" placeholder="请设置6-12位登录密码"/>*
+						<strong>请输入登录密码</strong>
+					</li>
+					<li>
+						<span>确认密码</span>
+						<input type="password" placeholder="请确认登录密码">*
+						<strong>两次输入的密码不一致</strong>
+					</li>
+					<li>
+						<span>姓名</span>
+						<input type="text" name="" value="" placeholder="请输入姓名"/>*
+						<strong>请输入姓名</strong>
+					</li>
+					<li>
+						<span>身份证</span>
+						<input type="text" name="" value="" placeholder="请输入身份证号码" />*
+						<strong>请输入正确身份证号</strong>
+					</li>
+					<li>
+						<span>银行卡</span>
+						<input type="text" name="" value="" placeholder="请输入银行卡号" />
+					</li>
+					<li>
+						<span>设置支付密码</span>
+						<input type="password" value=""  placeholder="请设置支付密码"/>
+					</li>
+					<li>
+						<p>* 为必填选项</p>
+					</li>
+					<li>
+						<button type="button">提交注册</button>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 注册成功 -->
+			<div class="middle" style="display:none">
+				<p class="sucimg"></p>
+				<p class="welcome">恭喜你注册成功</p>
+				<p class="begin">开始购物</p>
+				<p class="time">
+					<span class="count"></span>
+					秒后将返回原来页面
+				</p>
+			</div>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+	<script src="js/myjs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.min.js" ></script>
+	<script>
+
+   
+		var t=5;
+		$(".count").text(t);
+		var time=setInterval(function(){
+			 t--;
+			 $(".count").text(t);
+			 if(t<=0){
+				 clearInterval(time);
+				 location.href="logn.html";
+			 }
+		},1000)
+	 </script>
+</html>

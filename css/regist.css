@@ -1,0 +1,198 @@
+body{
+    background: #fafafa !important;
+}
+.main{
+    width:988px;   
+    margin: 0 auto;
+   
+}
+.alebox{
+    position: absolute;
+    width: 500px;
+    left:50%;
+    margin-left: -250px;
+    top:250px;
+    height: 300px;
+    z-index:3;
+    background:gray; 
+    /* display:none; */
+    text-align: center;
+    font-size:16px;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+ }
+.head{
+    height: 115px;  
+    width: 988px; 
+    margin-top:30px; 
+}
+.fl{
+    float: left;
+}
+a{
+    cursor: pointer;
+}
+.logo{
+    height: 115px;  
+    width: 988px; 
+    display: block;
+}
+.logo img{
+    margin-top: 20px;
+}
+.middle{
+    width: 988px;   
+    height:700px;  
+    margin:0 auto;
+    border: 1px solid #f0f0f0;
+    background:white;
+}
+.midhead{
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+    padding: 30px;
+}
+.content{
+    width: 338px;   
+    margin: 0 auto;
+}
+.box p{
+    margin-top: 15px;
+    line-height: 38px;
+    height: 40px;   
+    width: 338px;       
+    position: relative;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+.box em{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+}
+.phone,.imgcode,.note,.pasimg{
+    display: block;
+    background-image: url("../images/a.png");
+    background-position: -576px -25px;
+    background-size: 589px;
+    width: 12px;
+   /* border:1px solid red;*/
+    height: 16px;
+}
+.imgcode,.note{
+    background-position:-576px 0;
+}
+
+.pasimg{
+       background-position: -576px -51px
+}
+input{
+    width: 300px;
+    height: 38px;
+    position: absolute; 
+    left:0;
+    top:0;
+    line-height: 38px;
+    border: 1px solid gray;
+    font-size: 12px;
+    background-color: transparent;
+    padding-left: 35px;
+}
+.recommend{
+    padding-left:10px;
+    width: 325px;   
+}
+.getcode,.getnote{
+    /* position: absolute; 
+    right:0;
+    top:0;*/
+    width: 98px; 
+    display: block;
+    text-align: center;
+    height: 38px;
+    cursor: pointer;
+     line-height: 38px;
+    border: 1px solid gray;
+    font-size: 12px;
+}
+.code,.noteipt{
+    width: 193px;   
+}
+.fr{
+    float: right;
+}
+.numberInfo .numimg{
+    background: url("../images/a.png") no-repeat -350px -324px;
+    width:16px;
+    height:16px;  
+    display: block;
+    /*border:1px solid red;*/
+
+}
+.numberInfo{
+    line-height: 16px;
+    font-size:10px;
+    color: #d00000;
+    margin-top: 8px;
+    display: none;
+    margin-bottom: -7px;
+   
+    /*padding-left: 18px;
+}*/
+}
+.fl{
+    float: left;
+}
+.numerror,.conerror,.paserror,.codeerror,.noteerror{
+    line-height: 16px;
+    height: 16px;  
+    display: block;
+    margin-left:14px; 
+
+}
+.loginbtn{
+      line-height: 16px;
+    height: 16px;  
+    color:black;
+    cursor:pointer;
+    display: block;
+}
+.eye1,.eye2{
+    display: block;
+    background-image: url("../images/zqh8.png");
+    background-position: -142px -92px;
+    background-size: 220px;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    right: 11px;
+    position: absolute;
+    cursor: pointer;
+}
+.move{
+     background-position:-188px -137px; 
+}
+.box .regist{
+    width: 340px;
+    height: 38px;
+    line-height: 38px;
+   font-size: 14px;
+    background: #b32424;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    margin:40px auto 0;
+}
+.box .regtxt{
+    font-size: 12px;
+    color: #999;
+    padding-bottom: 20px
+}
+.box .regtxt1{
+   cursor: pointer;
+   color: #000;
+    
+}

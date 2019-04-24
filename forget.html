@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <link rel="stylesheet" href="css/reset1.css">
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
+    <style>
+     .log_top{
+	width:1060px;
+	line-height: 50px;
+	margin: 0 auto;
+	padding-top: 20px;
+	display: flex;
+    }
+    .log_top_img{
+        margin-left:40px;
+    }
+    .log_top_con img{
+        margin-top: 20px;
+        width:350px;
+       
+    }
+    .log_top_con{
+        font-size: 2.4rem;
+        margin-left: 10px;
+        color:
+    }
+       .middle{
+           border:0 none
+       }
+       .main{
+        width: 100%;
+        height: 684px;
+        background:#f1f1f1;
+        padding-top:78px;
+        box-sizing:border-box;
+       }
+       .forget{
+        width: 990px;
+        height: 526px;
+        margin:0px auto;
+        background: white;
+
+       }
+       .forget h5{
+        width: 950px;
+        margin: 0 auto;
+        border-bottom: 1px solid #eee;
+        line-height: 21px;
+        padding: 13px 0 14px;
+        font-size: 16px;
+        color: #333;
+       
+       }
+       .middle{
+        width: 990px;
+        height: 221px;
+        position: relative;
+       }
+       .alebox{
+          position: absolute;
+          width: 200px;
+          left:50%;
+          margin-left: -100px;
+          top:40px;
+          height: 100px;
+          z-index:3;
+          background:gray; 
+          display:none;
+          text-align: center;
+          font-size:16px;
+          line-height: 100px;
+          font-weight: bold;
+          color: white;
+          letter-spacing: 2px;
+       }
+       .bindphone{
+        width: 320px;
+        margin: 39.5px auto 0;
+        background: pink;
+        height: 221px;
+       }
+       .box .regist{
+        width: 140px;
+        height: 48px;
+        background: #cc5252;
+        border-radius: 100px;
+        margin-top: 43px;
+        display: block;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="log_top">
+        <div class="log_top_img">
+            <img src="img/logo1.png" alt="">
+        </div>
+        <div class="log_top_con">
+            <img src="img/font1.png" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="forget">
+            <h5>忘记密码</h5>
+            <div class="middle">
+                <div class="alebox">
+
+                </div>
+                <form class="content" action="###" id="registForm">
+                    <div class="box">
+                        <p>
+                            <em class="phone">   
+                            </em>
+                            <input type="text" class="phonenumber" name="phonenumber" placeholder="请输入手机号" maxlength="11">
+                 
+                        </p>
+                         <span class="numberInfo clearfix">
+                             <span class="numimg fl">   </span>
+                             <span class="numerror fl allinfo"></span>
+                         </span>
+                    </div>
+                      
+                      <div class="box">
+                        <p>
+                            <em class="note">   
+                            </em>
+                            <input type="text" class="noteipt fl" maxlength="4" placeholder="请输入短信验证码">
+                           <span class="getnote fr"> 获取验证码 </span>
+                        </p>
+                         <span class="numberInfo clearfix">
+                             <span class="numimg fl">   </span>
+                             <span class="noteerror fl allinfo"></span>
+                         </span>
+                    </div>
+                  <div class="box">
+                        <p>
+                            <em class="pasimg">   
+                            </em>
+                            <input type="password" class="setipt" placeholder="输入新密码" maxlength="12">
+                            <span class="eye1">   </span>
+                        </p>
+                         <span class="numberInfo clearfix">
+                             <span class="numimg fl">   </span>
+                             <span class="paserror fl allinfo"></span>
+                         </span>
+                    </div>
+                 <div class="box">
+                        <p>
+                            <em class="pasimg">   
+                            </em>
+                            <input type="password" class="conipt" placeholder="重复新密码" maxlength="12">
+                            <span class="eye2">   </span>
+                        </p>
+                         <span class="numberInfo clearfix">
+                             <span class="numimg fl">   </span>
+                             <span class="conerror fl allinfo"></span>
+                             <span class="loginbtn fl"></span>
+                         </span>
+                    </div>
+             
+                 <div class="box">
+                        <p class="regist">
+                          确认
+                       
+                        </p>
+                      
+                         
+                    </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.min.js" ></script>
+    <script>
+    var flag=true;
+$(".eye1").click(function(){
+     $(".eye1").toggleClass("move");
+    
+     if(flag){
+      $(".setipt").attr("type","text");
+      flag=false;
+     }else{
+      $(".setipt").attr("type","password");
+      flag=true;
+     }
+})
+    var flag2=true;
+    var passwordstr;
+    var passwordcon;
+$(".eye2").click(function(){
+     $(".eye2").toggleClass("move");
+    
+   
+     if(flag2){
+      $(".conipt").attr("type","text");
+      flag2=false;
+     }else{
+      $(".conipt").attr("type","password");
+      flag2=true;
+     }
+})
+    //电话失去焦点
+$(".phonenumber").blur(function(){
+     number();
+})
+
+function number(){
+    var p=/^1\d{10}$/;
+  if(!p.test($(".phonenumber").val())){
+     allflag=true;
+    $(".numerror").html("请输入正确的手机号");
+    $(".numerror").parent().css({"display":"block"})
+  }else{
+    $(".numerror").html("");
+     $(".numerror").parent().css({"display":"none"});
+     
+  }
+}
+
+
+
+//获取短信验证码
+var codeValue;
+  var time;
+  var t;
+console.log($(".allinfo"))
+  $(".getnote").click(function(){
+    
+      if($.trim($(".getnote").html())=="获取验证码"){
+        
+         var phone=$(".phonenumber").val();
+         console.log(phone)
+         var p=/^1\d{10}$/;
+        
+     
+          if(p.test(phone)){
+             // 随机生成一个四位的验证码
+            codeValue=parseInt(Math.random()*9000+1000);
+            console.log("codeValue="+codeValue);          
+            // console.log(phone);
+            var xhr=new XMLHttpRequest();
+            xhr.open("get","message.php?code="+codeValue+"&phone="+phone,true);
+            xhr.send();
+            xhr.onreadystatechange=function(){
+                console.log(xhr.responseText);
+            } 
+            var i=60;
+            time=new Date().getTime();
+            console.log(time);
+            $(".noteerror").parent().css({"display":"block"});
+            $(".noteerror").html("短信已发送，有效时间一分钟");
+            t=setInterval(function(){                
+                i--;             
+                $(".getnote").html("剩余秒数:"+i);           
+                if(i==0){ 
+                    $(".getnote").html("获取验证码");
+                     clearInterval(t);
+                     $(".noteerror").html("短信验证码失效");   
+                     $(".noteerror").parent().css({"display":"block"});               
+                }
+            },1000)
+           
+            
+         
+          }else if(!p.test(phone)){
+           $(".numerror").html("请输入正确的手机号");
+           $(".numerror").parent().css({"display":"block"});
+         
+
+          }
+        }
+         
+     })
+
+     //验证码失去焦点时
+  $(".noteipt").blur(function(){
+     $(".noteerror").html("");
+     $(".noteerror").parent().css({"display":"none"});
+  })
+
+  //设置密码失去焦点时
+ $(".setipt").blur(function(){
+ 
+ setpas();
+
+ })
+
+function setpas(){
+  passwordstr=$(".setipt").val();
+ var p2=/^\w{6,12}$/;
+ if(!p2.test(passwordstr)){
+   $(".paserror").html("密码由6-12位任意数字字母下划线组成")
+//    console.log(passwordstr);
+   $(".paserror").parent().css({"display":"block"});
+ }else{
+  $(".paserror").html("")
+//    console.log(passwordstr);
+   $(".paserror").parent().css({"display":"none"});
+ }
+}
+
+//确认密码失去焦点
+  $(".conipt").keyup(function(){
+     confirmpas();
+   })
+ 
+
+  function confirmpas(){
+     passwordcon=$(".conipt").val();
+    //  console.log(passwordcon);
+     if(passwordstr!=passwordcon){  
+     $(".conerror").html("两次密码不一致，请检查你的密码");
+     console.log($(".conerror").html())
+     $(".conerror").parent().css({"display":"block"})
+     }else{
+     $(".conerror").html("");
+     $(".conerror").parent().css({"display":"none"})
+   }
+  }
+
+  
+  $(".regist").click(function(){
+               number();
+               setpas();
+               confirmpas();             
+               var curtime=new Date().getTime();
+               var minite=(curtime-time)/1000/60;
+            //    console.log(minite)
+                var codeval=$(".noteipt").val();
+                  if(codeValue!=codeval){
+                      console.log("=====")
+                  $(".noteerror").html("短信验证码输入错误");
+                  $(".noteerror").parent().css({"display":"block"});
+                  $(".getnote").html("获取验证码");
+             
+                  clearInterval(t);
+              } 
+              
+              var numerror=$(".numerror").html();
+              var noteerror=$(".noteerror").html();
+              var paserror=$(".paserror").html();
+              var conerror=$(".conerror").html();
+             
+              if( numerror=="" && noteerror=="" && paserror=="" &&  conerror==""&& minite<=1){
+                console.log("====");
+                  $(".numberError").html("");
+                  $(".numberError").parent().css({"display":"none"});
+                 
+                   var phonenumber=$(".phonenumber").val();
+                   console.log( phonenumber)
+                   var password=$(".setipt").val();
+                   $.get("forget.php?phonenumber="+phonenumber+"&password="+password,function(data){
+                          console.log(data);
+                           if(data==0){
+                             $(".conerror").html("该用户尚未注册");
+                             $(".conerror").parent().css({"display":"block"});
+                             $(".loginbtn").html("去注册");
+                              $(".loginbtn").click(function(){
+                                 location.href="regist.html";
+                              })
+                           }else{  
+                               $(".alebox").css("display","block");
+                               $(".alebox").html("修改成功");
+                               var i=0
+                               var timmer=setInterval(function(){
+                               i++;
+                               if(i==3){
+                                $(".alebox").css("display","none");
+                                $(".alebox").html("");
+                                location.href="login.html";
+                                clearInterval( timmer);
+
+                               }
+                               },1000)
+                          
+                           }
+                   })
+              }else if(minite>1){
+                  $(".numberError").html("短信验证失效");
+                  $(".numberError").parent().css({"display":"block"});
+                  $(".conerror").html("");
+                  $(".conerror").parent().css({"display":"none"});
+              }
+
+        })
+
+    </script>
+</body>
+</html>
