@@ -106,16 +106,23 @@ regInfButton.onclick = function () {
 		regStepS[1].className = " ";
 		regStepS[2].className = "reg_active";
 		regInf.style.display = "none";
-        middle.style.display = "block";
-	}
-	
-	
-	
-	
+		middle.style.display = "block";
+		var t=5;
+$(".count").text(t);
+
+function timer(){
+	t--;
+	$(".count").text(t);
+	if(t<=0){
+		clearInterval(time);
+		location.href="logn.html";
+	};
+}
+var time=setInterval(timer,1000);
+
+	}	
 	
 }
-
-
 
 
 
